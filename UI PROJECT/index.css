@@ -1,0 +1,162 @@
+* {
+    margin: 0%;
+    padding: 0%;
+
+    font-family: 'Mulish', sans-serif;
+}
+
+.fnav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: rgb(34, 31, 97);
+    color: rgb(255, 247, 14);
+    padding: 6px;
+}
+
+
+.fnav img {
+    width: 9%;
+    color: rgb(229, 255, 0);
+    margin-inline: 20px;
+}
+
+.fnav .left {
+    display: flex;
+}
+
+.left input {
+    width: 420px;
+    height: 33px;
+    border-radius: 2px;
+    border: none;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.fnav .right {
+    display: flex;
+    margin-top: 11px;
+
+}
+
+.right button {
+    width: 80px;
+    height: 27px;
+    background-color: rgb(252, 252, 58);
+    color: rgba(19, 10, 10, 0.979);
+    border: none;
+    border-radius: 4px;
+
+    margin-inline: 22px;
+
+}
+
+.right i {
+    font-size: 22px;
+    margin-inline: 22px;
+
+}
+
+.right p {
+    font-size: 19px;
+    margin-inline: 22px;
+}
+
+
+
+.sec-nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 11px;
+    background-color: rgb(26, 26, 49);
+    color: white;
+}
+
+.sec-nav p:hover {
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(239, 247, 8);
+}
+
+.s-left {
+    display: flex;
+}
+
+.s-left p {
+    margin-inline: 10px;
+}
+
+.s-right p {
+    margin-inline: 15px;
+}
+
+.s-right {
+    display: flex;
+}
+
+.main img {
+    width: 100%;
+}
+
+.container h2 {
+    text-align: center;
+    padding: 22px;
+}
+
+.container .card {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+
+}
+
+.card img {
+    width: 17%;
+    margin-inline: 15px;
+    border-radius: 10px;
+}
+
+.banner img {
+    width: 100%;
+    margin-top: 33px;
+}
+
+.premiere {
+    background-color: rgb(31, 21, 116);
+    padding: 22px;
+    margin-top: 40px;
+    color: rgb(238, 255, 0);
+}
+
+.premiere .containers {
+    margin-top: 33px;
+}
+
+.containers .card {
+    margin-top: 15px;
+}
+
+.footer {
+    background-color: rgb(39, 39, 117);
+    padding: 33px;
+    margin-top: 44px;
+}
+
+.footer img {
+    margin-left: 39%;
+    width: 20%;
+    border-top: 2px solid rgb(50, 64, 154);
+}
+
+.footer .icon {
+    display: flex;
+    justify-content: center;
+}
+
+.icon i {
+    margin-inline: 15px;
+    font-size: 23px;
+}
