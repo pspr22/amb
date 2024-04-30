@@ -5,6 +5,10 @@
     font-family: 'Mulish', sans-serif;
 }
 
+body{
+   background-color: rgb(34, 31, 97);
+}
+
 .fnav {
     display: flex;
     justify-content: center;
@@ -129,6 +133,7 @@
     padding: 22px;
     margin-top: 40px;
     color: rgb(238, 255, 0);
+    
 }
 
 .premiere .containers {
@@ -159,4 +164,65 @@
 .icon i {
     margin-inline: 15px;
     font-size: 23px;
+}
+
+
+a {
+  text-decoration: none; 
+  color: white;
+  transition: all 0.3s ease; 
+}
+
+
+a:hover {
+ font-weight: bolder;
+ 
+}
+
+button{
+     transition: all 0.3s ease; 
+}
+
+button:hover {
+    width: 83px;
+    height: 28px;
+  
+}
+button:hover a{
+  color:black
+}
+
+.card img:hover{
+  transform: scale(1.1);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.footer .block{
+    display: flex;
+    justify-content:space-between;
+    gap: 45px;
+}
+
+
+i{
+    transform: scale(2);
+   color: antiquewhite;
+}
+
+.fa-facebook:hover{
+    color:blue
+}
+.fa-instagram:hover{
+color: rgb(211, 17, 114);
+}
+
+.fa-twitter:hover{
+color:black
+}
+
+.fa-youtube:hover{
+color: red;
 }
