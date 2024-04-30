@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Number of Seats</title>
+    <style>
+        /* Style for button container */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        /* Style for each button */
+        .seat-button {
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .seat-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="seat-button" onclick="redirectToPaymentPage(1)">1 Seat</button>
+        <button class="seat-button" onclick="redirectToPaymentPage(2)">2 Seats</button>
+        <button class="seat-button" onclick="redirectToPaymentPage(3)">3 Seats</button>
+        <button class="seat-button" onclick="redirectToPaymentPage(4)">4 Seats</button>
+        <button class="seat-button" onclick="redirectToPaymentPage(5)">5 Seats</button>
+        <button class="seat-button" onclick="redirectToPaymentPage(6)">6 Seats</button>
+    </div>
+
+    <script>
+        function redirectToPaymentPage(seats) {
+            // Redirect to payment.html with seats query parameter
+            window.location.href = `payment.html?seats=${encodeURIComponent(seats)}`;
+        }
+    </script>
+</body>
+</html>

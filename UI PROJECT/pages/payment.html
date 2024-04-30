@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 360px;
+        padding: 20px 1px;
+        margin: 10px 0;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 10px 15px -3px rgba(33, 150, 243, 0.4),
+          0 4px 6px -4px rgba(33, 150, 243, 0.4);
+        border-radius: 10px;
+        background-color: #6b6ecc;
+        background: linear-gradient(45deg, #04051dea 0%, #2b566e 100%);
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      .content .price {
+        color: white;
+        font-weight: 800;
+        font-size: 50px;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+      }
+
+      .content .description {
+        color: rgba(255, 255, 255, 0.6);
+        margin-top: 10px;
+        font-size: 14px;
+      }
+
+      .content .title {
+        font-weight: 800;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.64);
+        margin-top: 10px;
+        font-size: 25px;
+        letter-spacing: 1px;
+      }
+
+      button {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        border: none;
+        outline: none;
+        color: rgb(255 255 255);
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.75rem;
+        padding: 0.75rem 1.5rem;
+        background-color: rgb(33 150 243);
+        border-radius: 0.5rem;
+        width: 90%;
+        text-shadow: 0px 4px 18px #2c3442;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="content">
+        <div class="title">Movie Tickets</div>
+        <div class="total-amount price" id="totalAmount"></div>
+        <div class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at
+          posuere eros. Interdum et malesuada fames ac ante ipsum primis in
+          faucibus.
+        </div>
+      </div>
+
+      <button class="payment-button" onclick="redirectToTicketPage()">
+        Make Payment
+      </button>
+    </div>
+
+    <script>
+      // Function to calculate total amount and display it
+      function calculateTotalAmount() {
+        // Get the number of seats from the query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const seats = parseInt(urlParams.get("seats"));
+
+        // Calculate total amount
+        const totalAmount = seats * 150; // Assuming each seat costs 150 rupees
+
+        // Display total amount on the page
+        document.getElementById(
+          "totalAmount"
+        ).textContent = `Total Amount: ₹${totalAmount}`;
+      }
+
+      // Call the function when the page loads
+      window.onload = calculateTotalAmount;
+
+      // Function to redirect to the ticket page
+      function redirectToTicketPage() {
+        // Redirect to ticket.html
+        window.location.href = "ticket.html";
+      }
+    </script>
+  </body>
+</html>
